@@ -1,0 +1,43 @@
+﻿@model ProjetoTccDoacaoDeSangue.Models.TipoSanguineo
+
+@{
+    ViewBag.Title = "Detalhe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhe</h2>
+
+<div>
+    <h4>TipoSanguineo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SangueID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SangueID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClienteID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClienteID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDeSangue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDeSangue)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
